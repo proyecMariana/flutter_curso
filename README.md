@@ -3,7 +3,7 @@
 # Estructura de un Programa en Flutter
 Partiendo de la estructura básica creada por Android Studio para el tipo de proyecto Flutter Application, la primera línea de código que generalmente nos vamos a encontrar en nuestros archivos .dart es:
 
-** import 'package:flutter/material.dart'; **
+**import 'package:flutter/material.dart';**
 Con esta instrucción importaremos a nuestro código el paquete de todos los Widgets (o la mayoría de ellos) de Material Design que son la base principal de clases con la que trabaja Flutter.
 
 Similar a como es en Java o C++, en Dart, el método main() será el punto de inicio de nuestra aplicación. Por su parte, runApp() es la función que inicializa y da vida a la aplicación definida por el Widget App. En otras palabras, runApp() toma el widget y lo sirve.
