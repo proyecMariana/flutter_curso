@@ -15,10 +15,15 @@ La propiedad fundamental del widget MaterialApp en la que definimos toda la estr
 // --- Estructura estándar de un Scaffold
 
 return Scaffold(
+
   appBar:               , // --- barra de título
+  
   body:                 , // --- contenido principal
+  
   bottomNavigationBar:  , // --- navigación
+  
   floatingActionButton:   // --- botón de acción
+  
 )
 
 
