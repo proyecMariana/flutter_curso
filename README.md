@@ -13,14 +13,14 @@ App() es la clase principal que representa la raíz de la aplicación. Esta clas
 La propiedad fundamental del widget MaterialApp en la que definimos toda la estructura base de nuestra aplicación es home: a la que a su vez asignamos el widget Home() de tipo StatefulWidget que es la parte funcional de nuestra aplicación y que retornará a fin de cuentas un Scaffold() que es el widget que contiene finalmente toda la estructura de nuestra interfaz.
 
 // --- Estructura estándar de un Scaffold
-....
+
 return Scaffold(
   appBar:               , // --- barra de título
   body:                 , // --- contenido principal
   bottomNavigationBar:  , // --- navigación
   floatingActionButton:   // --- botón de acción
 )
-...
+
 
 ```
 for number in range(3):
