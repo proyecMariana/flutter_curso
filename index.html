@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Curso Flutter</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Universidad Mariana" name="keywords">
+    <meta content="Universidad Mariana" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .btn-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .btn-fullscreen {
+            margin-bottom: 60px;
+            /* Space between the two buttons */
+        }
+
+        .text-right-custom {
+            text-align: right;
+        }
+
+        .text-left-custom {
+            padding-left: 30px;
+            text-align: left;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .video-container iframe {
+            width: 90%;
+            height: 90%;
+            border: none;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .navbar-brand h1 {
+                font-size: 24px;
+            }
+
+            .carousel-item {
+                transition: transform 2s ease, opacity 2s ease;
+            }
+
+            .no-overlay .carousel-caption {
+                display: none;
+            }
+
+            .carousel-single .carousel-caption {
+                display: none;
+            }
+
+            .carousel-single .carousel-item img {
+                opacity: 1 !important;
+            }
+
+            .carousel-caption {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="#" class="navbar-brand">
+                    <h4 class="m-0 text-primary">Aplicaciones Móviles</h4>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="#" class="nav-item nav-link active" onclick="showSection('inicio')">Inicio</a>
+                        <a href="#" class="nav-item nav-link" onclick="showSection('dllomovil')">Instalaci&oacute;n</a>
+                        <a href="#" class="nav-item nav-link" onclick="showSection('catexplorer')">Dart</a>
+                        <a href="#" class="nav-item nav-link" onclick="showSection('music')">Flutter</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Navbar End -->
+
+    <!-- Inicio Section Start -->
+    <div id="inicio" class="content-section active">
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="50000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/Dip_1.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_0.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_2.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_4.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_5.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_6.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_7.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_8.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_9.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/Dip_10.png" alt="Image">
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                    <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-prev-icon mb-n2"></span>
+                    </div>
+                </a>
+                <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                    <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-next-icon mb-n2"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Carousel End -->
+    </div>
+    <!-- Inicio Section End -->
+
+    <!-- Dllo.Movil Section Start -->
+    <div id="dllomovil" class="content-section">
+        <div class="container-fluid p-0">
+            <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="15000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/fondo2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-left justify-content-center">
+                            <!-- Contenedor del Iframe -->
+                            <div class="video-container">
+                                <!-- Iframe que carga la página web deseada -->
+                                <iframe src="https://www.umariana.edu.co/ingenieria-sistemas.html" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dllo.Movil Section End -->
+
+    <!-- Catálogo en linea Section Start -->
+    <div id="catexplorer" class="content-section">
+        <div class="container-fluid p-0">
+            <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="15000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/fondo2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-left justify-content-center">
+                            <!-- Contenedor del Iframe -->
+                            <div class="video-container">
+                                <!-- Iframe que carga la página web deseada -->
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/9KCA44GZRQg?si=u3EgG9pA-VpARIut"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Catálogo en linea Section End -->
+    <!-- Catálogo en linea Section Start -->
+    <div id="music" class="content-section">
+        <div class="container-fluid p-0">
+            <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="15000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/fondo2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-left justify-content-center">
+                            <!-- Contenedor del Iframe -->
+                            <div class="video-container">
+                                <!-- Iframe que carga la página web deseada -->
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/8uOz_IpMBao?si=b-k6MN0IhD-ObCxa&amp;start=12"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Catálogo en linea Section End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-fixed btn-fullscreen" onclick="toggleFullscreen()"><i
+            class="fa fa-expand"></i></a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Libraries -->
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Contact -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <!-- Template -->
+    <script src="js/main.js"></script>
+
+    <!-- Definición de la función showSection -->
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Muestra la sección seleccionada
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousels = document.querySelectorAll('.carousel');
+            carousels.forEach(carousel => {
+                const items = carousel.querySelectorAll('.carousel-item');
+                if (items.length === 1) {
+                    carousel.classList.add('carousel-single');
+                }
+            });
+        });
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }        
+    </script>
+</body>
+
+</html>
